@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Sign Up</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="icon" href="Images/logo.png"/>
+		<link rel="stylesheet" href="css/style2.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	
+	</style>
+
+	</head>
+	<body>
+		<header>
+			<nav>
+		<div class="row clearfix">
+			<img src="Images/image.png" class="logo" alt="Interview Portal" title="Interview Portal">
+			<a href="#" class="mobile-icon"  onclick="slideshow()"><i class="fa fa-bars"></i> </a>
+			<ul class="main-nav" id="check-class">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="help.html">Help</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="Login.html">LogIn</a></li>
+			</ul>
+			</div>
+	</nav>
+		<div class="Glass">
+				<img title="Member Login"src="Images/signup.png" alt="Member Login" height="20%" width="100% " style=" border-radius:16px;">
+		<br>
+		<br>
+		<form action="php/insert1.php" method="post">
+			<input title="First Name" type=text name=FirstName placeholder="First Name"width="70%" required>
+			<br/>
+			<br>
+			<input title="Last Name" type=text name=LastName placeholder="Last Name"width="70%" required>
+			<br>
+			<br>
+			<input title="Age" type=text name=age placeholder="Age"width="70%" required>
+			<br>
+			<br>
+			<input title="Email" type=email name=Email placeholder="Email"width="70%" required>
+			<br>
+			<br>
+			<input title="Password" type=password name=Password1 placeholder="Password" width="70%" required>
+			<br>
+			<br>
+			<input title="Password" type=password name=Password2 placeholder="confirm password" width=70% required>
+			<div  style="color:white; font-size:80%">
+			<input type="radio" name=gender value="male"> Male
+  			<input type="radio" name=gender value="female"> Female
+  			<input type="radio" name=gender value="other"> Other
+			<br>
+			</div>
+			<button title="Login" style=" padding: 12px 20px 12px 20px" type="submit">SignUp</button>
+		</form>
+		</div>
+		</header>
+		<script type="text/javascript">
+	function slideshow()
+	{
+		var x=document.getElementById('check-class');
+		if(x.style.display === "none")
+		{
+			x.style.display="block";
+		}
+		else
+		{
+			x.style.display="none";
+		}
+
+	}
+</script>
+	</body>
+</html>
